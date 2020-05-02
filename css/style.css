@@ -1,0 +1,179 @@
+:root{
+    --primero: #6D6FC8;
+    --segundo: #C97DB9;
+    --tercero: #fafafa;
+}     
+body{
+    margin: 0px;
+    padding: 0px;
+    background: var(--primero);
+    font-family: sans-serif;
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    background: var(--tercero);
+    border-radius: 10px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    box-shadow: 0px 0px 20px 20px #585aca;
+
+}
+
+.left_panel{
+    background: linear-gradient(var(--segundo), #A77DB9);
+    border-radius: 10px 0 0 10px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+}
+.header h2{
+    margin: 0px;
+    color: #fff;
+}
+.redes ul{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.redes ul li{
+    list-style: none;
+    margin-bottom: 5px;
+    display: block;
+    padding: 10px;
+    max-width: 50%;
+}
+
+.redes ul li:hover{
+    background: linear-gradient(to right, var(--primero), #A77DB9, rgba(167,125,185,0));
+ 
+}
+.redes ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.redes ul li a i{
+    margin-right: 10px;
+}
+.rigth_panel{
+    background: var(--tercero);
+    width: 60%;
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+    position: relative;
+   
+}
+.botones{
+    position: absolute;
+    top: 40%;
+    left: -24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+.botones a{
+    color: var(--primero);
+    display: block;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+.active{
+    color: var(--primero)!important;
+    display: block;
+    background: var(--tercero);
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    width: 100%;
+    transition: 500ms all;
+}
+.mostrar_login{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:  auto;
+}
+.mostrar_login p, h1{
+    text-align: center;
+    color: #818181;
+}
+.form_input{
+    border-bottom: 1px solid #818181!important;
+}
+.form_input input[type="text"], input[type="password"]{
+    border: 0px;
+    background: var(---tercero);
+    height: 30px;
+    margin: 10px 5px;
+    color: var(--primero);
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 0 10px;
+}
+.form_input input[type="text"]:focus, input[type="password"]:focus{
+    border: 0px;
+    outline:none !important;
+}
+::placeholder{
+    color: #C8C8C8;
+}
+hr{
+    border: 1px solid #e4e4e4;
+    width: 230px;
+}
+.form_input_enviar{
+    display: block;
+    background: var(--primero);
+    color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.social_login{
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social_login a{
+   color: #8e8e8e;
+   text-decoration: none;
+}
+.social_login a:hover{
+    color: #666666;
+    transition: 500ms all;
+    text-decoration: underline;
+ }
+.mostrar_registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:  auto;
+}
+.ocultar_login{
+    display: none;
+}
+.ocultar_registro{
+    display: none;
+}
+#showPass{
+    cursor: pointer;
+}
